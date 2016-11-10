@@ -1,3 +1,7 @@
+[![Code Climate](https://codeclimate.com/github/rgrabowski/rules_processor/badges/gpa.svg)](https://codeclimate.com/github/rgrabowski/rules_processor)
+[![Test Coverage](https://codeclimate.com/github/rgrabowski/rules_processor/badges/coverage.svg)](https://codeclimate.com/github/rgrabowski/rules_processor/coverage)
+[![Issue Count](https://codeclimate.com/github/rgrabowski/rules_processor/badges/issue_count.svg)](https://codeclimate.com/github/rgrabowski/rules_processor)
+[![Build Status](https://travis-ci.org/rgrabowski/rules_processor.svg?branch=master)](https://travis-ci.org/rgrabowski/rules_processor)
 # RulesProcessor
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rules_processor`. To experiment with that code, run `bin/console` for an interactive prompt.

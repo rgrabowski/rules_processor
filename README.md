@@ -22,7 +22,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rules_processor
-    
+
 
 ### Configuration
 
@@ -42,8 +42,8 @@ end
 Array of rules designed to process. Rules order has importance.
 
 ### Rule
-Rule has `conditions` and `actions`. 
-Conditions are grouped in logical groups: `meet_all` and `meet_any`.
+Rule has `conditions` and `actions`.
+Conditions are grouped in to logical groups: `meet_all` and `meet_any`.
 
 | Logical group | Description |
 | --- | --- |
@@ -67,7 +67,7 @@ Conditions are grouped in logical groups: `meet_all` and `meet_any`.
 ```
 
 ### Condition
-Condtions has three attributes: `:field`, `:operator`, `:value`
+Conditions has three attributes: `:field`, `:operator`, `:value`
 
 | Attribute | Description |
 |---|---|
@@ -97,7 +97,7 @@ Public interface:
 ```ruby
 RulesProcessor::Processor.new(records: {ticket: ticket, comment: comment},
                               options: {},
-                              ruleset: set_ruleset).process
+                              ruleset: ruleset).process
 ```
 
 ### Methods to compare
@@ -138,7 +138,7 @@ There are three groups of operators:
 
 | Group | Operators |
 | --- | --- |
-| `base` | `include`, `not_include` |
+| `base` | `is`, `is_not` |
 | `includable` | `include`, `not_include` |
 | `comparable` | `less_than`, `less_than_equal`, `greater_than`, `greater_than_equal` |
 

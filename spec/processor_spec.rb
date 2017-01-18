@@ -5,6 +5,7 @@ RSpec.describe RulesProcessor::Processor do
   before do
     RulesProcessor.configure do |config|
       config.actions_class = ActionsProcessor
+      config.conditions_class = ConditionsProcessor
     end
     allow_any_instance_of(described_class).to receive(:actions_processor).and_return(true)
   end

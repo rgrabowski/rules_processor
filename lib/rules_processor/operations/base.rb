@@ -27,7 +27,8 @@ module RulesProcessor
       private
 
       def actual_value
-        records[record_class].public_send(field)
+        klass = RulesProcessor.configuration.conditions_class
+        klass.new(record: records[record_class]).public_send(condition.field)
       end
 
       def nullified_value

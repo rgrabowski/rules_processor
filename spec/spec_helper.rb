@@ -21,5 +21,6 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     ActionsProcessor = Class.new
+    ConditionsProcessor = Class.new
   end
 end
